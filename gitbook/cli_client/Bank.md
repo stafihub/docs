@@ -1,18 +1,18 @@
-## Bank
+# Bank
 Bank module allows you to manage assets in your local accounts.
 
-### Available Commands
+## Available Commands
 		
 |Name   |Description   |
 | :------------ | :------------ |
-|balances   |Query for account balances by address    |
-|total   |Query the total supply of coins of the chain    |
-|send   |Create and/or sign and broadcast a MsgSend transaction    |
+|[balances](#qbalances)   |Query for account balances by address    |
+|[total](#qtotal)   |Query the total supply of coins of the chain    |
+|[send](#txsend)   |Create and/or sign and broadcast a MsgSend transaction    |
 
-#### stafid query bank balances
+### stafihubd query bank balances<span id='qbalances'></span>
 Query the total balance of an account or of a specific denomination.
 ```
-stafid query bank balances [address] [flags]
+stafihubd query bank balances [address] [flags]
 ```
 
 **Flags:**
@@ -23,10 +23,10 @@ stafid query bank balances [address] [flags]
 |--denom    |string    |   |   |The specific balance denomination to query for    |
 |--count-total   |   |   |   |Count total number of records in all balances to query for    |
 
-### stafid query bank total
+## stafihubd query bank total<span id='qtotal'></span>
 Query total supply of coins that are held by accounts in the chain.
 ```
-stafid query bank total [flags]
+stafihubd query bank total [flags]
 ```
 **Flags:**
 
@@ -35,10 +35,10 @@ stafid query bank total [flags]
 |-h, --help   |   |   |   |Help for coin-type    |
 |--denom    |string    |   |   |The specific balance denomination to query for    |
 
-### stafid tx bank send
+## stafihubd tx bank send<span id='txsend'></span>
 Sending tokens to another address, this command includes `generate`, `sign` and `broadcast` steps.
 ```
-stafid tx bank send [from_key_or_address] [to_address] [amount] [flags]
+stafihubd tx bank send [from_key_or_address] [to_address] [amount] [flags]
 ```
 **Flags:**
 

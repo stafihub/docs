@@ -10,19 +10,19 @@ Sudo module store an admin account to do some important settings.
 |add-denom   |query the metadata for a new rToken    |
 
 
-#### stafid query sudo admin
+#### stafihubd query sudo admin
 ```
-stafid query sudo admin
+stafihubd query sudo admin
 ```
 
-#### stafid tx sudo update-admin
+#### stafihubd tx sudo update-admin
 Only the current admin can do this.
 ```
-stafid tx sudo update-admin [address] [flags]
+stafihubd tx sudo update-admin [address] [flags]
 ```
 eg.
 ```
-stafid tx sudo add-denom --metadata="path/metadata.json" --from mykey
+stafihubd tx sudo add-denom --metadata="path/metadata.json" --from mykey
 ```
 
 
