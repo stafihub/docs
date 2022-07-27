@@ -1,10 +1,10 @@
 # Integrating with Interchain Accounts
 
-> It is highly recommended to read [this](https://ibc.cosmos.network/main/apps/interchain-accounts/overview.html#) before reading this instruction.
+> It is highly recommended to read [interchain-accounts introductions](https://ibc.cosmos.network/main/apps/interchain-accounts/overview.html#) before moving on.
 
 With the release of InterChain Accounts, which enables cross-chain account management built upon IBC, a solution to build rTokens via InterChain Accounts is implemented on StaFiHub and brings more security, decentralization and ease of integration.
 
-> The target chain is supposed to integrate Interchain Accounts(ICA) module. 
+> The target chain is assumed to have integrated Interchain Accounts(ICA) module. 
 
 Like the way to [integrate with multisig accounts](#https://app.gitbook.com/o/PkZ9s2zCpTrmEqTqHIQh/s/zmKNtlFtsE0JPahPkNCA/rtoken/integrate-rtoken/integrating-with-multisign-accounts), no development is required at all, the integration process is also a three-step process and the main step is to configure the following parameters, of which most are the same except pool accounts, the other two steps are the same and we won't belabor it here.
 
