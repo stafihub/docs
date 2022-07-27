@@ -6,7 +6,7 @@ With the release of InterChain Accounts, which enables cross-chain account manag
 
 > The target chain is assumed to have integrated Interchain Accounts(ICA) module. 
 
-Like the way to [integrate with multisig accounts](#https://app.gitbook.com/o/PkZ9s2zCpTrmEqTqHIQh/s/zmKNtlFtsE0JPahPkNCA/rtoken/integrate-rtoken/integrating-with-multisign-accounts), no development is required at all, the integration process is also a three-step process and the main step is to configure the following parameters, of which most are the same except pool accounts, the other two steps are the same and we won't belabor it here.
+Like the way to [integrate with multisig accounts](https://app.gitbook.com/o/PkZ9s2zCpTrmEqTqHIQh/s/zmKNtlFtsE0JPahPkNCA/rtoken/integrate-rtoken/integrating-with-multisign-accounts), no development is required at all, the integration process is also a three-step process and the main step is to configure the following parameters, of which most are the same except pool accounts, the other two steps are the same and we won't belabor it here.
 
 |Flags    |Description    | Example |
 | ------------ | ------------ | :------------: |
