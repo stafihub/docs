@@ -19,11 +19,23 @@ Like the way to [integrate with multisig accounts](https://app.gitbook.com/o/PkZ
 |gasPrice   | Gas price. Ensure that each rToken realy service can successfully initiate a transaction to the target chain | 0.025uatom |
 |bondingDuration   | Unbonding time of the target chain | 21days |
 |leastBond   | Minimum staking amount to mint rToken(Optional). Usually decided by StaFiHub | 0.1ATOM |
-|ica-pool   | An ica-pools contains two ica-accounts, one of them is a real pool account, and the other is a secondary account used to collect staking rewards | cosmos1lyqrtft9x286gfsf30rf8vtvmc3jgd0mevd8p3<br>cosmos1u5dfrwye0vgtf706wc0h55vl06v0mc23fsu225 |
+|ICA-pool   | An ICA-pools contains two ICA-accounts, one of them is a real pool account, and the other is a secondary account used to collect staking rewards | cosmos1lyqrtft9x286gfsf30rf8vtvmc3jgd0mevd8p3<br>cosmos1u5dfrwye0vgtf706wc0h55vl06v0mc23fsu225 |
 
 As the target chain already supports the ICA module, StaFiHub can register ICA accounts on the target chain through its module [Ledger](https://github.com/stafihub/stafihub/tree/main/x/ledger) and use them as ICA pool accounts.
 
 During the registration process, the module `Ledger` plays the role as the `Authentication Module`, while StaFiHub is the `Controller Chain`, and the target chain is the `Host Chain`.
+
+## FAQ
+
+1. Integrating with Interchain Accounts or Multisig accounts, Can the two integration methods coexist for an rToken？
+    Yes. Here are the details:
+    a. The two types of pools exist independently, and all of them can receive origin Token.
+    b. The exchange rate is calculated after counting the total number of all pool staked.
+    c. Both methods rely on the same set of code as their relay.
+    
+2. Why does it need to run relay services for integrating with Interchain Accounts?
+    Because the Host chain(StaFiHub) can not directly query balance or total staked amount of the Interchain Accounts, this issue will be addressed after Interchain Query is released.
+
 
  
 
