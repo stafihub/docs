@@ -23,6 +23,8 @@ Like the way to [integrate with multisig accounts](https://app.gitbook.com/o/PkZ
 
 As the target chain already supports the ICA module, StaFiHub can register ICA accounts on the target chain through its module [Ledger](https://github.com/stafihub/stafihub/tree/main/x/ledger) and use them as ICA pool accounts.
 
+During the registration process, the module `Ledger` plays the role as the `Authentication Module`, while StaFiHub is the `Controller Chain`, and the target chain is the `Host Chain`.
+
  
 
 
