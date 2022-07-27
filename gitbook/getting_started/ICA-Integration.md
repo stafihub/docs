@@ -2,7 +2,7 @@
 
 > It is highly recommended to read [interchain-accounts introductions](https://ibc.cosmos.network/main/apps/interchain-accounts/overview.html#) before moving on.
 
-With the release of InterChain Accounts, which enables cross-chain account management built upon IBC, a solution to build rTokens via InterChain Accounts is implemented on StaFiHub and brings more security, decentralization and ease of integration.
+With the release of Interchain Accounts, which enables cross-chain account management built upon IBC, a solution to build rTokens via Interchain Accounts is implemented on StaFiHub and brings more security, decentralization and ease of integration.
 
 > The target chain is assumed to have integrated Interchain Accounts(ICA) module. 
 
