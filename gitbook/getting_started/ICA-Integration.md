@@ -28,12 +28,14 @@ During the registration process, the module `Ledger` plays the role as the `Auth
 ## FAQ
 
 1. Integrating with Interchain Accounts or Multisig accounts, Can the two integration methods coexist for an rToken？
+
     Yes. Here are the details:
     a. The two types of pools exist independently, and all of them can receive origin Token.
     b. The exchange rate is calculated after counting the total number of all pool staked.
     c. Both methods rely on the same set of code as their relay.
     
 2. Why does it need to run relay services for integrating with Interchain Accounts?
+
     Because the Host chain(StaFiHub) can not directly query balance or total staked amount of the Interchain Accounts, this issue will be addressed after Interchain Query is released.
 
 
